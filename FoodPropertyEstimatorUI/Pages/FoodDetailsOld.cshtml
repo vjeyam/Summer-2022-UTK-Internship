@@ -1,0 +1,73 @@
+﻿@page
+@model FoodPropertyEstimatorUI.Pages.FoodDetailsModel
+@{
+    @Html.LabelFor(m => m.Protein)
+    @Html.TextBoxFor(m => m.Protein)
+    <br /> 
+    <br />
+    
+    @Html.LabelFor(m => m.Fat)
+    @Html.TextBoxFor(m => m.Fat) 
+    <br />
+    <br />
+
+    @Html.LabelFor(m => m.Carbohydrate)
+    @Html.TextBoxFor(m => m.Carbohydrate) 
+    <br />
+    <br />
+
+    @Html.LabelFor(m => m.Ash)
+    @Html.TextBoxFor(m => m.Ash)
+    <br />
+    <br />
+
+    @Html.LabelFor(m => m.Water)
+    @Html.TextBoxFor(m => m.Water)
+    <br />
+    <br />
+
+    @Html.LabelFor(m => m.Fiber)
+    @Html.TextBoxFor(m => m.Fiber) 
+    <br />
+    <br />
+
+    @Html.LabelFor(m => m.Total)
+    @Html.TextBoxFor(m => m.Total) 
+    <br />
+    <br />
+
+    <form method="POST">
+        @Html.LabelFor(m => m.Temperature)
+        @Html.TextBoxFor(m => m.Temperature)
+        <label> °C </label>
+
+    	<button  asp-page-handler="Calculate">Calculate Thermo-Physical Properties</button>
+        <br />
+        <br />
+    </form>
+
+
+    @Html.LabelFor(m => m.ThermalConductivity)
+    @Html.TextBoxFor(m => m.ThermalConductivity)
+    <label> W/(m•K) </label>
+    <br />
+    <br />
+
+    @Html.LabelFor(m => m.Density)
+    @Html.TextBoxFor(m => m.Density)
+    <label> kg/m<sup>3</sup> </label> 
+    <br />
+    <br />
+
+    @Html.LabelFor(m => m.SpecificHeatCapacity)
+    @Html.TextBoxFor(m => m.SpecificHeatCapacity)
+    <label> kJ/(kg•°C) </label>
+    <br />
+    <br />
+
+    @Html.LabelFor(m => m.ThermalDiffusivity)
+    @Html.TextBoxFor(m => m.ThermalDiffusivity)
+    <label> mm<sup>2</sup>/s</label>
+    <br />
+    <br />
+}

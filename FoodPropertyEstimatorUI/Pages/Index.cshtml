@@ -1,0 +1,73 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h3>Introduction</h3>
+</div>
+
+<div class="text-body">
+    <p>
+        This website was created during the University of Tennessee Food REEU in the summer of 2022.  The 
+        main purpose of this project was to create a cheaper and more accessible website of one made
+        many years ago (*Need name*).  The person in charge of the project was Vishal Jeyam, with mentors
+        Dr. Mark Morgan and Dr. Vermont Punongba Dia.  The website used both C++/C# and Html to create the
+        website.  The Html code helped create anything related to the website and the C++/C# dealt with the
+        equations among anything else.  To briefly explain each tab, the "Search USDA Database" uses the
+        USDA Database for foods like milk or eggs and shows how much water, carbohydrates, fat, fiber,
+        protein, and ash are in the food product.  Along with this, you can see how much of these
+        food properties are at certain temperatures (-40 to 150 °C).  Now that many get boring for some,
+        and the thought where you can put in custom values for how much protien or carbohydrates are in a
+        food product.  Well that's where the "Custom Data" tab comes to play as quite literally you can play
+        with your food.
+    </p>
+</div>
+
+<div class="text-center">
+    <h3>Search USDA Database</h3>
+</div>
+
+<div class="text-body"
+    <p>
+        As stated previously, you are able to search up any food in the USDA Food Database and find
+        what the food properties are at certain temperatures.  To figure out what those values are, we
+        referenced Choi and Okio (1986) equations - a pdf/link version will be provided below.  When you
+        search up a food, you will be presented with 4 different categories: Foundation Foods,
+        SR Legacy Foods, Survey Foods, and Branded Foods.  Usually, one category may not have any items
+        in it, while others have multiple.  For example lets take chicken, where it will show no items for
+        Foundation Foods but numerous for Survey Foods.  When you click on an item, it will bring you to a 
+        page with 2 tables.  One table shows you the mass and volume fractions, and the other shows the
+        total density, thermal conductivity, thermal diffusivity, and specific heat capacity. Above the tables
+        you will see the FDC Id, description of the item, and the temperature.  The volume fractions, total
+        density, thermal conductivity, thermal diffusivity, and specific heat capacity will show once you
+        (the user) inputs a temperature between -40 to 150 °C.
+    </p>
+</div>
+
+<div class="text-center">
+    <h3>Custom Data</h3>
+</div>
+
+<div class="text-body">
+    <p>
+        Similar to the Search USDA Database tab, the Custom Data tab find what the food properties are at
+        certain temperatures.  To figure out what those values are, we referenced Choi and Okio (1986)
+        equations - a pdf/link version will be provided below.  However, unlike searching and picking a food
+        product, the user is able to give custom values for the amount of protein, carbohydrates, fat, fiber,
+        water, ash, and temperature.  With all these values, we can find the total density, thermal conductivity,
+        thermal diffusivity, and specific heat capacity.
+    </p>
+</div>
+
+<div class="text-center">
+    <h3>Contact Info</h3>
+</div>
+
+<div class="text-body">
+    <p>
+
+    </p>
+</div>

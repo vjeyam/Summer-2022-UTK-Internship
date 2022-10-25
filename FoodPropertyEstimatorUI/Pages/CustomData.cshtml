@@ -1,0 +1,131 @@
+﻿@page
+@model FoodPropertyEstimatorUI.Pages.CustomDataModel
+@{
+	<form method="POST">
+					@Html.LabelFor(m => m.Description)	
+					@Html.TextBoxFor(m => m.Description)
+					<br/> 
+					<br/>
+
+					@Html.LabelFor(m => m.Water) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					@Html.TextBoxFor(m => m.Water, new { @id = "txtWater", @onchange = "onchangeevent()" })
+					<br/>
+
+					@Html.LabelFor(m => m.Carbohydrate) &nbsp; &nbsp;
+					@Html.TextBoxFor(m => m.Carbohydrate, new { @id = "txtCarbohydrate", @onchange = "onchangeevent()" })
+					<br/>
+
+					@Html.LabelFor(m => m.Protein) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					@Html.TextBoxFor(m => m.Protein, new { @id = "txtProtein", @onchange = "onchangeevent()" })
+					<br/>
+
+					@Html.LabelFor(m => m.Fat) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					@Html.TextBoxFor(m => m.Fat, new { @id = "txtFat", @onchange = "onchangeevent()" })
+					<br/>
+
+					@Html.LabelFor(m => m.Fiber) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					@Html.TextBoxFor(m => m.Fiber, new { @id = "txtFiber", @onchange = "onchangeevent()" })
+					<br/>
+
+					@Html.LabelFor(m => m.Ash) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					@Html.TextBoxFor(m => m.Ash, new { @id = "txtAsh", @onchange = "onchangeevent()" })
+					<br/>
+
+					@Html.LabelFor(m => m.Total) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					@Html.TextBoxFor(m => m.Total, new { @id = "txtTotal", disabled = "disabled"})
+					<br/>
+
+					@Html.LabelFor(m => m.Temperature) &nbsp; &nbsp;
+					@Html.TextBoxFor(m => m.Temperature)
+					<label> °C </label>
+
+					<button id="btnCalculate" asp-page-handler="Calculate">Calculate Thermo-Physical Properties</button>
+					<br />
+					<br />
+
+					<div id="FoodProperties">
+						<table class="table">
+							<thead>
+								<th>
+									Food
+								</th>
+								<th>
+									Density (kg/m<sup>3</sup>)
+								</th>
+								<th>
+									Thermal Conductivity (W/(m•K))
+								</th>
+								<th>
+									Specific Heat (kJ/(kg•°C))
+								</th>
+								<th>
+									Thermal Diffusivity (m<sup>2</sup>/2)
+								</th>
+							</thead>
+							<tbody>
+								<td>
+									@Html.DisplayFor(model => model.Description)
+								</td>
+								<td>
+									@Html.DisplayFor(model => model.RhoTot)
+								</td>
+								<td>
+									@Html.DisplayFor(model => model.CtcTot)
+								</td>
+								<td>
+									@Html.DisplayFor(model => model.CpTot)
+								</td>
+								<td>
+									@Html.DisplayFor(model => model.AlphaTot)
+								</td>
+							</tbody>
+						</table>
+					</div>
+	</form>
+
+	<script type="text/javascript">
+				function onchangeevent() {
+					if (parseFloat(document.getElementById("txtWater").value) > 1) {
+						alert("Mass fraction values must be less than 1. Enter values less than 1.")
+						document.getElementById("txtWater").value = "";
+					}
+					if (parseFloat(document.getElementById("txtCarbohydrate").value) > 1) {
+						alert("Mass fraction values must be less than 1. Enter values less than 1.")
+						document.getElementById("txtCarbohydrate").value = "";
+					}
+					if (parseFloat(document.getElementById("txtProtein").value) > 1) {
+						alert("Mass fraction values must be less than 1. Enter alues less than 1.")
+						document.getElementById("txtProtein").value = "";
+					}
+					if (parseFloat(document.getElementById("txtFat").value) > 1) {
+						alert("Mass fraction values must be less than 1. Enter values less than 1.")
+						document.getElementById("txtFat").value = "";
+					}
+					if (parseFloat(document.getElementById("txtFiber").value) > 1) {
+						alert("Mass fraction values must be less than 1. Enter values less than 1.")
+						document.getElementById("txtFiber").value = "";
+					}
+					if (parseFloat(document.getElementById("txtAsh").value) > 1) {
+						alert("Mass fraction values must be less than 1. Enter values less than 1.")
+						document.getElementById("txtAsh").value = "";
+					}
+					let total = parseFloat(document.getElementById("txtWater").value)
+							+ parseFloat(document.getElementById("txtCarbohydrate").value)
+							+ parseFloat(document.getElementById("txtProtein").value)
+							+ parseFloat(document.getElementById("txtFat").value)
+							+ parseFloat(document.getElementById("txtFiber").value)
+							+ parseFloat(document.getElementById("txtAsh").value);
+					if (total != 1) {
+						document.getElementById("btnCalculate").disabled = true;
+					}
+					else {
+						document.getElementById("btnCalculate").disabled = false;
+					}
+					document.getElementById("txtTotal").value = total.toString();
+				}
+
+				function calculatefunction() {
+
+				}
+	</script> 
+}

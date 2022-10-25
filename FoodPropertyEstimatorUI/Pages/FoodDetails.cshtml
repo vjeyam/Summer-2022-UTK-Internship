@@ -1,0 +1,162 @@
+﻿@page
+@model FoodPropertyEstimatorUI.Pages.FoodDetailsModel
+@{
+	<form method="POST">
+		@Html.LabelFor(m => m.FDCId)
+		@Html.TextBoxFor(m => m.FDCId)
+		<br /> 
+		<br />
+
+		@Html.LabelFor(m => m.Description)
+		@Html.TextBoxFor(m => m.Description)
+		<br /> 
+		<br />
+	
+	    @Html.LabelFor(m => m.Temperature)
+        @Html.TextBoxFor(m => m.Temperature)
+        <label> °C </label>
+
+    	@Html.HiddenFor(m => m.Water)
+
+        @Html.HiddenFor(m => m.Fat)
+
+        @Html.HiddenFor(m => m.Carbohydrate)
+
+        @Html.HiddenFor(m => m.Fiber)
+
+        @Html.HiddenFor(m => m.Protein)
+
+        @Html.HiddenFor(m => m.Ash)
+
+		@Html.HiddenFor(m => m.Total)
+
+		@Html.HiddenFor(m => m.Description)
+		
+		<button  asp-page-handler="Calculate">Calculate Thermo-Physical Properties</button>
+        <br />
+        <br />
+
+		<div id="FoodProperties">
+			<table class="table">
+				<thead>
+					<th>
+						Proximate
+					</th>
+					<th>
+						Mass Fraction
+					</th>
+					<th>
+						Volume Fraction
+					</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							@Html.DisplayNameFor(model => model.Water)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.Water)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.XvM)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							@Html.DisplayNameFor(model => model.Carbohydrate)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.Carbohydrate)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.XvC)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							@Html.DisplayNameFor(model => model.Protein)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.Protein)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.XvP)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							@Html.DisplayNameFor(model => model.Fat)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.Fat)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.XvFat)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							@Html.DisplayNameFor(model => model.Fiber)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.Fiber)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.XvFib)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							@Html.DisplayNameFor(model => model.Ash)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.Ash)
+						</td>
+						<td>
+							@Html.DisplayFor(model => model.XvS)
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="FoodProperties">
+			<table class="table">
+				<thead>
+					<th>
+						Food
+					</th>
+					<th>
+						Density (kg/m<sup>3</sup>)
+					</th>
+					<th>
+						Thermal Conductivity (W/(m•K))
+					</th>
+					<th>
+						Specific Heat (kJ/(kg•°C))
+					</th>
+					<th>
+						Thermal Diffusivity (m<sup>2</sup>/2)
+					</th>
+				</thead>
+				<tbody>
+					<td>
+						@Html.DisplayFor(model => model.Description)
+					</td>
+					<td>
+						@Html.DisplayFor(model => model.RhoTot)
+					</td>
+					<td>
+						@Html.DisplayFor(model => model.CtcTot)
+					</td>
+					<td>
+						@Html.DisplayFor(model => model.CpTot)
+					</td>
+					<td>
+						@Html.DisplayFor(model => model.AlphaTot)
+					</td>
+				</tbody>
+			</table>
+		</div>
+	</form>
+}

@@ -1,0 +1,255 @@
+﻿@page
+@model FoodPropertyEstimatorUI.Pages.FoodEngineModel
+@{
+	<form method="POST">
+			<input type="text"  asp-for="SearchString" />
+			<button  asp-page-handler="Search">Search</button>
+	</form>
+
+	<!-- Tab links -->
+	<div class="tab" id="tabMain">
+			<button class="tablinks" id="btnFoundationFoods" onclick="ShowTable(0)">Foundation Foods</button>
+			<button class="tablinks" id="btnSRLegacyFoods" onclick="ShowTable(1)">SR Legacy Foods</button>
+			<button class="tablinks" id="btnSurveyFoods" onclick="ShowTable(2)">Survey Foods</button>
+			<button class="tablinks" id="btnBrandedFoods" onclick="ShowTable(3)">Branded Foods</button>
+	</div>
+	
+	<div id="FoundationFoods" style="display:none; background-color:bisque">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.FoundationFoodList[0].NDBNumber)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.FoundationFoodList[0].Description)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.FoundationFoodList[0].AcquisitionDate)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.FoundationFoodList[0].FoodCategory)
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if (Model.FoundationFoodList != null)
+				{
+					@foreach (var item in Model.FoundationFoodList)
+					{
+						<tr>
+							<td>
+								@Html.DisplayFor(modelItem => item.NDBNumber)
+							</td>
+							<td>
+								<a asp-page="/FoodDetails" asp-route-id="@item.FDCId">@Html.DisplayFor(modelItem => item.Description)</a>
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.AcquisitionDate)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.FoodCategory)
+							</td>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+
+	<div id="SRLegacyFoods" style="display:none; background-color:bisque">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.SRLegacyFoodList[0].NDBNumber)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.SRLegacyFoodList[0].Description)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.SRLegacyFoodList[0].FoodCategory)
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if (Model.SRLegacyFoodList != null)
+				{
+					@foreach (var item in Model.SRLegacyFoodList)
+					{
+						<tr>
+							<td>
+								@Html.DisplayFor(modelItem => item.NDBNumber)
+							</td>
+							<td>
+								<a asp-page="/FoodDetails" asp-route-id="@item.FDCId">@Html.DisplayFor(modelItem => item.Description)</a>
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.FoodCategory)
+							</td>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+	
+	<div id="SurveyFoods" style="display:none; background-color:bisque">
+		<table class="table"> 
+			<thead>
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.SurveyFoodList[0].FoodCode)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.SurveyFoodList[0].Description)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.SurveyFoodList[0].AdditionalDescriptions)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.SurveyFoodList[0].FoodCategory)
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if (Model.SurveyFoodList != null)
+				{
+					@foreach (var item in Model.SurveyFoodList)
+					{
+						<tr>
+							<td>
+								@Html.DisplayFor(modelItem => item.FoodCode)
+							</td>
+							<td>
+								<a asp-page="/FoodDetails" asp-route-id="@item.FDCId">@Html.DisplayFor(modelItem => item.Description)</a>							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.AdditionalDescriptions)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.FoodCategory)
+							</td>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+	
+	<div id="BrandedFoods" style="display:none; background-color:bisque">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.BrandedFoodList[0].GtinUpc)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.BrandedFoodList[0].Description)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.BrandedFoodList[0].FoodCategory)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.BrandedFoodList[0].BrandOwner)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.BrandedFoodList[0].BrandName)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.BrandedFoodList[0].MarketCountry)
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if (Model.BrandedFoodList != null)
+				{
+					@foreach (var item in Model.BrandedFoodList)
+					{
+						<tr>
+							<td>
+								@Html.DisplayFor(modelItem => item.GtinUpc)
+							</td>
+							<td>
+								<a asp-page="/FoodDetails" asp-route-id="@item.FDCId">@Html.DisplayFor(modelItem => item.Description)</a>							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.FoodCategory)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.BrandOwner)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.BrandName)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.MarketCountry)
+							</td>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var model = @Json.Serialize(@Model.SRLegacyFoodList);
+			if (model != null) {
+				document.getElementById("SRLegacyFoods").style.display = "block";
+				document.getElementById('btnFoundationFoods').style.backgroundColor = 'White';
+				document.getElementById('btnSRLegacyFoods').style.backgroundColor = 'Orange';
+				document.getElementById('btnSurveyFoods').style.backgroundColor = 'White';
+				document.getElementById('btnBrandedFoods').style.backgroundColor = 'White';
+			} else {
+				document.getElementById("SRLegacyFoods").style.display = "none";
+			}
+
+			document.getElementById("FoundationFoods").style.display = "none";
+			document.getElementById("SurveyFoods").style.display = "none";
+			document.getElementById("BrandedFoods").style.display = "none";
+		});
+																
+		function ShowTable(selectedTab) {
+			if (selectedTab == 0) {
+				document.getElementById("FoundationFoods").style.display = "block"; //gets really slow when running the program :(
+				document.getElementById("SRLegacyFoods").style.display = "none";
+				document.getElementById("SurveyFoods").style.display = "none";
+				document.getElementById("BrandedFoods").style.display = "none";
+				document.getElementById('btnFoundationFoods').style.backgroundColor = 'Orange';
+				document.getElementById('btnSRLegacyFoods').style.backgroundColor = 'White';
+				document.getElementById('btnSurveyFoods').style.backgroundColor = 'White';
+				document.getElementById('btnBrandedFoods').style.backgroundColor = 'White';
+			}
+			else if (selectedTab == 1) {
+				document.getElementById("FoundationFoods").style.display = "none";
+				document.getElementById("SRLegacyFoods").style.display = "block";
+				document.getElementById("SurveyFoods").style.display = "none";
+				document.getElementById("BrandedFoods").style.display = "none";
+				document.getElementById('btnFoundationFoods').style.backgroundColor = 'White';
+				document.getElementById('btnSRLegacyFoods').style.backgroundColor = 'Orange';
+				document.getElementById('btnSurveyFoods').style.backgroundColor = 'White';
+				document.getElementById('btnBrandedFoods').style.backgroundColor = 'White';
+			}
+			else if (selectedTab == 2) {
+				document.getElementById("FoundationFoods").style.display = "none";
+				document.getElementById("SRLegacyFoods").style.display = "none";
+				document.getElementById("SurveyFoods").style.display = "block";
+				document.getElementById("BrandedFoods").style.display = "none";
+				document.getElementById('btnFoundationFoods').style.backgroundColor = 'White';
+				document.getElementById('btnSRLegacyFoods').style.backgroundColor = 'White';
+				document.getElementById('btnSurveyFoods').style.backgroundColor = 'Orange';
+				document.getElementById('btnBrandedFoods').style.backgroundColor = 'White';
+			}
+			else if (selectedTab == 3) {
+				document.getElementById("FoundationFoods").style.display = "none";
+				document.getElementById("SRLegacyFoods").style.display = "none";
+				document.getElementById("SurveyFoods").style.display = "none";
+				document.getElementById("BrandedFoods").style.display = "block";
+				document.getElementById('btnFoundationFoods').style.backgroundColor = 'White';
+				document.getElementById('btnSRLegacyFoods').style.backgroundColor = 'White';
+				document.getElementById('btnSurveyFoods').style.backgroundColor = 'White';
+				document.getElementById('btnBrandedFoods').style.backgroundColor = 'Orange';
+			}
+		}
+	</script>
+}

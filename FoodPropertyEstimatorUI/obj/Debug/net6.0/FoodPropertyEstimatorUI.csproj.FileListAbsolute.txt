@@ -1,0 +1,60 @@
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\appsettings.json
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.staticwebassets.runtime.json
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.exe
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.deps.json
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.runtimeconfig.json
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.dll
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.pdb
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.csproj.AssemblyReference.cache
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.AssemblyInfoInputs.cache
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.AssemblyInfo.cs
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.csproj.CoreCompileInputs.cache
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.RazorAssemblyInfo.cache
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.RazorAssemblyInfo.cs
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\scopedcss\bundle\FoodPropertyEstimatorUI.styles.css
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\scopedcss\projectbundle\FoodPropertyEstimatorUI.bundle.scp.css
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.csproj.CopyComplete
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.dll
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\refint\FoodPropertyEstimatorUI.dll
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.pdb
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.genruntimeconfig.cache
+C:\Users\14792\source\repos\FoodPropertyEstimator\FoodPropertyEstimatorUI\obj\Debug\net6.0\ref\FoodPropertyEstimatorUI.dll
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\appsettings.json
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.staticwebassets.runtime.json
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.exe
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.deps.json
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.runtimeconfig.json
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.dll
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\FoodPropertyEstimatorUI.pdb
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.csproj.AssemblyReference.cache
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.AssemblyInfoInputs.cache
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.AssemblyInfo.cs
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.csproj.CoreCompileInputs.cache
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.RazorAssemblyInfo.cache
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.RazorAssemblyInfo.cs
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\scopedcss\bundle\FoodPropertyEstimatorUI.styles.css
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\scopedcss\projectbundle\FoodPropertyEstimatorUI.bundle.scp.css
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.csproj.CopyComplete
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.dll
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\refint\FoodPropertyEstimatorUI.dll
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.pdb
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\FoodPropertyEstimatorUI.genruntimeconfig.cache
+C:\Users\14792\Box\Vishal\Tenn Internship\FoodPropertyEstimator May 30\FoodPropertyEstimatorUI\obj\Debug\net6.0\ref\FoodPropertyEstimatorUI.dll
